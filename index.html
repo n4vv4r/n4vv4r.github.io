@@ -1,28 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>roger@arch</title>
-    <link rel="icon" href="server-icon.png" type="image/png" sizes="64x64">
-</head>
-<style>
+  <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>roger@arch</title>
+  <link rel="icon" href="server-icon.png" type="image/png" sizes="64x64">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
     body, html {
       margin: 0;
       padding: 0;
+      width: 100%;
       height: 100%;
+      overflow: hidden;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: white;
     }
 
     body {
-      background-image: url('bg.png');
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: hidden;
-      height: 100%;
+      font-family: 'JetBrains Mono';
+      font-size: 22px;
+      color: black; 
+      position: relative;
+      z-index: 1;
+    }
+
+    .lol {
+      position: fixed;
+      inset: 0;
+      width: fit-content;
+      height: fit-content;
+      margin: auto;
+      z-index: 2; 
+      text-align: center;
+    }
+
+    a {
+      color: black;
+    }
+
+    a.visited {
+      color: crimson;
     }
   </style>
 </head>
 <body>
+  
+  <div id="particles-js"></div>
+
+  <div class="lol">
+    <h1>brookwayne@arch</h1>
+    <p>Bienvenido a mi web.</p><br>
+    <p>Mi YouTube: <a href="https://youtube.com/@BrooksyeWayne"><b>youtube.com/@BrooksyeWayne</b></a></p><br>
+    <p>Mi servidor de Minecraft: <a href="https://mcsrvstat.us/server/mc.brookwayne.xyz"><b>mc.brookwayne.xyz 1.21.4 Java</b></a></p><br>
+    <p>Puedes donar aquí:</p>
+    <p><b>LTC:</b> ltc1qermz4x48vd79dw3sj03nahuw8hctjfw9zmmy4g</p>
+    <p><b>BTC:</b> bc1q8stf7j24ggldg4hz8fm7np3x5t2x8gzwjdk463</p>
+    <p><b>SOL:</b> Dxa2GjMbGWR7h9d7gQNHBWf8K87E4hbw9VrKs7wJM1Mx</p>
+  </div>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#000000" }, 
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#000000", opacity: 0.4, width: 1 }, 
+        move: { enable: true, speed: 3 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
 </body>
 </html>
