@@ -4,7 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ReduxCraft</title>
+  <title>Reglas - ReduxCraft</title>
   <link rel="icon" href="server-icon.png" type="image/png" sizes="64x64">
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
@@ -66,7 +66,7 @@
       background: rgba(255, 255, 255, 0.9); 
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-top: 60px; /* Espacio para el navbar */
+      margin-top: 60px;
     }
 
     h1 {
@@ -74,9 +74,15 @@
       margin-bottom: 10px;
     }
 
-    p {
+    p, li {
       font-size: 1.2rem;
       margin-bottom: 10px;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
 
     a {
@@ -94,7 +100,7 @@
         font-size: 1.5rem;
       }
 
-      p {
+      p, li {
         font-size: 1rem;
       }
 
@@ -103,39 +109,32 @@
         width: 100%;
       }
     }
-
-    .crypto {
-      font-size: 0.24rem;
-      text-align: left;
-      margin-top: 10px;
-      padding: 10px;
-      background: rgba(0, 0, 0, 0.05);
-      border-radius: 5px;
-      display: inline-block;
-    }
   </style>
 </head>
 <body>
   <div id="particles-js"></div>
   <div class="nav">
-    <a href="#">Inicio</a>
-    <a href="cambios/">Changelog</a>
-    <a href="blog/">Blog</a>
-    <a href="terminos/">Términos</a>
+    <a href="../">Inicio</a>
+    <a href="../cambios/">Cambios</a>
+    <a href="../blog/">Blog</a>
+    <a href="#">Términos</a>
   </div>
   <div class="content">
-    <h1>ReduX INC.</h1>
-    <p>Un servidor anárquico más</p>
-    <p>Mi YouTube: <a href="https://youtube.com/@BrooksyeWayne">youtube.com/@BrooksyeWayne</a></p>
-    <p>Mi servidor de Minecraft: <a href="https://mcsrvstat.us/server/mc.brookwayne.xyz">mc.brookwayne.xyz 1.19.3 Java</a></p>
-    <p>El Discord es privado :)</p><br>
-    <p>Puedes donar aquí:</p>
-    <div class="crypto">
-      <p><b>LTC:</b> ltc1qermz4x48vd79dw3sj03nahuw8hctjfw9zmmy4g</p>
-      <p><b>BTC:</b> bc1q8stf7j24ggldg4hz8fm7np3x5t2x8gzwjdk463</p>
-      <p><b>SOL:</b> Dxa2GjMbGWR7h9d7gQNHBWf8K87E4hbw9VrKs7wJM1Mx</p>
-    </div>
-    <iframe style="width:728px;height:90px;max-width:100%;border:none;display:block;margin:auto" src="https://namemc.com/server/mc.brookwayne.xyz/embed" width="728" height="90"></iframe>
+    <h1>Reglas del Servidor</h1>
+    <p>ReduxCraft. es un servidor anárquico de Minecraft No-Premium, donde todo está permitido, pero hay algunas normas esenciales:</p>
+    <ul>
+      <li>- No hay moderación, cada jugador es libre de hacer lo que quiera.</li>
+      <li>- El griefing y el robo están permitidos.</li>
+      <li>- No hay protecciones, todo el mundo es responsable de su propia seguridad.</li>
+      <li>- No hay resets de mapa, el mundo es persistente.</li>
+      <li>- Se permite el uso de hacks y clientes modificados.</li>
+      <li>- No hay reglas contra trampas, matar, emboscadas.</li>
+      <li>- No se permite el uso de exploits que crasheen el servidor.</li>
+      <li>- El servidor es No-Premium (cracked), cualquier usuario puede unirse sin cuenta oficial.</li>
+      <li>- No hay soporte técnico oficial, cada jugador resuelve sus problemas.</li>
+      <li>- No se puede floodear en el chat</li>
+      <li><b>Romper cualquiera de estas normas puede tener como consecuencia: Silencios en el chat, borrar bases o construcciones que provoquen crasheos, o banear temporalmente al usuario que crashee o hackee directamente el servidor (backdooring es un ejemplo).</b></li>
+    </ul>
   </div>
   <script>
     particlesJS("particles-js", {

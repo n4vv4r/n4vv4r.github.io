@@ -4,7 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ReduxCraft</title>
+  <title>Blog - ReduxCraft</title>
   <link rel="icon" href="server-icon.png" type="image/png" sizes="64x64">
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
@@ -66,7 +66,7 @@
       background: rgba(255, 255, 255, 0.9); 
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-top: 60px; /* Espacio para el navbar */
+      margin-top: 60px;
     }
 
     h1 {
@@ -74,19 +74,21 @@
       margin-bottom: 10px;
     }
 
+    .changelog-entry {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
     p {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      color: crimson;
+      font-size: 1rem;
     }
 
     @media (max-width: 600px) {
@@ -94,48 +96,31 @@
         font-size: 1.5rem;
       }
 
+      h2 {
+        font-size: 1.2rem;
+      }
+
       p {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
-
-      .content {
-        padding: 15px;
-        width: 100%;
-      }
-    }
-
-    .crypto {
-      font-size: 0.24rem;
-      text-align: left;
-      margin-top: 10px;
-      padding: 10px;
-      background: rgba(0, 0, 0, 0.05);
-      border-radius: 5px;
-      display: inline-block;
     }
   </style>
 </head>
 <body>
   <div id="particles-js"></div>
   <div class="nav">
-    <a href="#">Inicio</a>
-    <a href="cambios/">Changelog</a>
-    <a href="blog/">Blog</a>
-    <a href="terminos/">Términos</a>
+    <a href="../">Inicio</a>
+    <a href="../cambios/">Cambios</a>
+    <a href="#">Blog</a>
+    <a href="../terminos/">Términos</a>
   </div>
   <div class="content">
-    <h1>ReduX INC.</h1>
-    <p>Un servidor anárquico más</p>
-    <p>Mi YouTube: <a href="https://youtube.com/@BrooksyeWayne">youtube.com/@BrooksyeWayne</a></p>
-    <p>Mi servidor de Minecraft: <a href="https://mcsrvstat.us/server/mc.brookwayne.xyz">mc.brookwayne.xyz 1.19.3 Java</a></p>
-    <p>El Discord es privado :)</p><br>
-    <p>Puedes donar aquí:</p>
-    <div class="crypto">
-      <p><b>LTC:</b> ltc1qermz4x48vd79dw3sj03nahuw8hctjfw9zmmy4g</p>
-      <p><b>BTC:</b> bc1q8stf7j24ggldg4hz8fm7np3x5t2x8gzwjdk463</p>
-      <p><b>SOL:</b> Dxa2GjMbGWR7h9d7gQNHBWf8K87E4hbw9VrKs7wJM1Mx</p>
+    <h1>PÁGINA EN CONSTRUCCIÓN</h1>
+    <div class="changelog-entry">
+      <h2>La web estará completa pronto</h2>
+      <p>Sentimos las molestias. Ve y juega mejor.</p>
     </div>
-    <iframe style="width:728px;height:90px;max-width:100%;border:none;display:block;margin:auto" src="https://namemc.com/server/mc.brookwayne.xyz/embed" width="728" height="90"></iframe>
+
   </div>
   <script>
     particlesJS("particles-js", {
